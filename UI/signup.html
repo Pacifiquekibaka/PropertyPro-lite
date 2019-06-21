@@ -1,10 +1,15 @@
 <html>
 <head>
+		<link rel="icon" type="image/ico" sizes="32x32" href="images/fav.ico">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Register</title>
 <link href="css/registerLogin/signup.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <style>
+        body{
+            background: url(images/signupimagebckgrnd.jpg);
+            background-size: cover;
+        }
     #msg {
     visibility: hidden;
     min-width: 250px;
@@ -46,18 +51,31 @@
     from {top: 30px; opacity: 1;}
     to {top: 0; opacity: 0;}
 }
+.signup h2{
+	color: #fff;
+}
+a{
+   text-decoration: none;
+   font-family: 'Play', sans-serif;
+   color: yellow;
+}
     </style>
+}
+}
+}
 </head>
 
 <body>
 <div class="signup">
     <form>
-    <h2 style="color: #fff;">Sign Up</h2>
+    <h2>Sign Up</h2>
     <input type="text" name="username" placeholder="First name"><br><br>
     <input type="text" name="username" placeholder="Last name"><br><br>
     <input type="password" name="pass" placeholder="Password"><br><br>    
     <input type="password" name="pass" placeholder="Confirm Password"><br><br>   
     <input type="text" placeholder="Email address"><br><br>  
+    <input type="text" placeholder="Phone Number"><br><br>
+    <input type="text" placeholder="Address"><br><br>    
     <input type="button" value="Sign up" onclick="myFunction()"><br><br>
         <div id="msg">Congratulations You Sign Up successfully!!</div>
         <script>
@@ -67,7 +85,7 @@ function myFunction() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 </script>
-        Already have account?<a href="login.html" style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow;">&nbsp;Log In</a>
+        Already have account?<a href="login.html" >&nbsp;Log In</a>
     </form>
     
     </div>
