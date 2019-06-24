@@ -1,273 +1,218 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<title>View Property Details</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/ico" sizes="32x32" href="images/fav.ico">
-<link rel="stylesheet" type="text/css" href="fonts/css/all.css">
-<style>
-body {
-  font-family: Arial;
-  margin: auto;
-  width: 74%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-  width: 40%;
-}
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.moreimg{
-  width: 100%;
-  height: 80px;
-  opacity: 0.8;
-}
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.image{
-  width: 100%;
-  height: 300px;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-.active,
-.moreimg:hover {
-  opacity: 1;
-}
-
-
-/* Create two columns that float next to eachother */
-.column2 {
-  float: right;
-  width: 40%;
-  padding: 10px;
-    }
-.title{
-color: rgb(8, 14, 14);
-margin: auto;
-font-weight: bold;
-border-bottom: 3px solid #334549;
-}
-.property{
-                padding: 10px;
-
-            }
-            .property ul li{
-                list-style: none;
-                padding: 10px;
-                font-size: 20px;
-                color: #222;
-                margin-left: 0px;
-            }
-            .property ul li.price{
-                color: #af8028;
-                font-weight: bold;
-
-            }
-            .property ul li span {
-                color: red;
-h2{
-  font-size: 30px;
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 600px) {
-              .column2{
-                width: 100%;
-                margin-top: 0;
-              }
-              .column2{
-                  display: none;
-              }
-            }
-</style>
+<head>
+  <title>View property</title>
+	<link rel="icon" type="image/ico" sizes="32x32" href="images/fav.ico">
+  <link href="css/navmenu.css" rel="stylesheet" type="text/css" />  <!--mainmenu css-->
+  <link rel="stylesheet" type="text/css" href="fonts/css/all.css"> <!--font css-->
+  <link href="css/propertyviewdetails.css" rel="stylesheet" type="text/css" /> <!--view specific property css-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" />   <!--main css-->
+	<link href="css/header.css" rel="stylesheet" type="text/css" />   <!--header css-->
+  <link href="css/map.css" rel="stylesheet" type="text/css" />
+	<link href="css/footer.css"  rel="stylesheet" type="text/css" />         <!--footer style-->
+	<script src="js/togglenavbar.js" type="text/javascript"></script>  <!--Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+</head>
 <body>
 
-<h2>Villa for Buy, Located In Nyarutarama</h2>
-<div class="column2">
+	  	<!--header div-->
+<div class="header">
+  <a href="index.html" class="logo"><img src="images/n2logo.png" alt="propertyProLiteLogo"/></a> 
+</div>
+    <!--navbarmainmenu div-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active1">BACK ON HOME PAGE</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  
+  <div class="search-container"><form><input type="text" name="search" placeholder="Find a Property here..."><button type="submit">Search</button></form></div><div class="clear"></div>
+</div>
+
+<div class="centre">
+<div class="column">
+                        <div class="container">
+                                <div class="mySlides">
+                                  <div class="numbertext">1 / 6</div>
+                                  <img src="images/sittingroom2.jpg" class="detalimage">
+                                </div>
+                              
+                                <div class="mySlides">
+                                  <div class="numbertext">2 / 6</div>
+                                  <img src="images/bedroom3.jpg" class="detalimage">
+                                </div>
+                              
+                                <div class="mySlides">
+                                  <div class="numbertext">3 / 6</div>
+                                  <img src="images/kitchenroom2.jpg" class="detalimage">
+                                </div>
+                                  
+                                <div class="mySlides">
+                                  <div class="numbertext">4 / 6</div>
+                                  <img src="images/bathroom2.jpg" class="detalimage">
+                                </div>
+                            
+                                <div class="mySlides">
+                                  <div class="numbertext">4 / 6</div>
+                                  <img src="images/siitingroom1.jpg" class="detalimage">
+                                </div>
+
+                                <div class="mySlides">
+                                  <div class="numbertext">6 / 6</div>
+                                  <img src="images/bedroom1.jpg" class="detalimage">
+                                </div>  
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                                 
+                              
+                                <div class="caption-container">
+                                  <p id="caption"></p>
+                                </div>
+                              
+                                <div class="row">
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/sittingroom2.jpg" class="detailimage2" onclick="currentSlide(1)" alt="Sitting Room 1">
+                                  </div>
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/bedroom3.jpg" class="detailimage2" onclick="currentSlide(2)" alt="Bed Room">
+                                  </div>
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/kitchenroom2.jpg" class="detailimage2" onclick="currentSlide(3)" alt="Kitchen">
+                                  </div>
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/bathroom2.jpg" class="detailimage2" onclick="currentSlide(4)" alt="Bath Room">
+                                  </div>
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/siitingroom1.jpg" class="detailimage2" onclick="currentSlide(5)" alt="Sitting room2">
+                                  </div>
+                                  <div class="column other-image">
+                                    <img class="demo cursor detailimage2" src="images/bedroom1.jpg" class="detailimage2" onclick="currentSlide(6)" alt="Bed Room 2">
+                                  </div>
+                                  
+                                </div>
+                              </div>
+<!--map div-->
+<h2>Property Map</h2>
+<hr>
+
+<div class="map-responsive">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4892847426577!2d30.064556314278104!3d-1.9578087372783268!
+2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca67fe439ffad%3A0xae35de28a94b6213!2sKN+43+St%2C+Kigali!5e0!3m2!1sen!2srw!
+4v1561338876079!5m2!1sen!2srw" ></iframe>
+</div> 
+
+                </div> 
+                <div class="column">
                  <div class="title">
-                        <h3>Property Details</h3>
+                        <h2>Villa for Buy, Located In Nyarutarama</h2>
                  </div>
                 
                  <div class="property">
                         <ul>
-                                <li ><span class="locate"><i class="fas fa-map-marker-alt" ></i></span> Kigali</li>
-
-                                <li class="price"><i class="fas fa-dollar-sign"></i> Price: Rwf 54 000 000</li>
+                                <li >City:<span class="locate"><i class="fas fa-map-marker-alt" ></i></span> Kigali</li>
+                                <li>Owner: Pacifique Kibaka<li>
+                                <li class="price"><i class="fas fa-dollar-sign"></i> Price: Rwf 190 000 000</li>
                                 <li>Status:Available<li>
                                 <li>Type:Family House</li>
                                 <li>State:Rwanda</li>
-                                <li>Address:KN 52 Ave</li>
+                                <li>Address:KN 43 st</li>
                                 <li><i class="fas fa-bath"></i>  2 bathroom</li>
-                                <li><i class="fas fa-bed"></i>  4 bedrooms</li>
+                                <li><i class="fas fa-bed"></i>  4 bedroom</li>
 
                                 <h4>Contact Agent  (Pacifique Kibaka)</h4>
                                 <hr>
                                 <li><i class="fas fa-phone"></i>  (+250) 786614530</li>
-                                <li><i class="fas fa-envelope-square"></i> irapacifique@gmail.com</li>
+                                <li><i class="fas fa-envelope-square"></i> pacifiquekibaka@gmail.com</li>
                             </ul>
                  </div>
-                
-              </div>   
-
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="images/sittingroom2.jpg" class="image">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="images/bedroom3.jpg" class="image" >
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="images/kitchenroom2.jpg" class="image">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="images/bathroom2.jpg" class="image">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="images/siitingroom1.jpg" class="image">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="images/bedroom1.jpg" class="image">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="moreimg cursor" src="images/house1.jpg" onclick="currentSlide(1)" alt="Sitting Room 1">
-    </div>
-    <div class="column">
-      <img class="moreimg cursor" src="images/bedroom3.jpg" onclick="currentSlide(2)" alt="Bed Room">
-    </div>
-    <div class="column">
-      <img class="moreimg cursor" src="images/kitchenroom2.jpg" onclick="currentSlide(3)" alt="kitchen Room">
-    </div>
-    <div class="column">
-      <img class="moreimg cursor" src="images/bathroom2.jpg" onclick="currentSlide(4)" alt="Bath Room">
-    </div>
-    <div class="column">
-      <img class="moreimg cursor" src="images/siitingroom1.jpg" onclick="currentSlide(5)" alt="Sitting Room">
-    </div>    
-    <div class="column">
-      <img class="moreimg cursor" src="images/bedroom1.jpg" onclick="currentSlide(6)" alt="Bed Room">
-    </div>
-  </div>
 </div>
-
+              
+</div>        
 <script>
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
+// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("moreimg");
-  var captionText = document.getElementById("caption");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-    
+
+<div class="clear"></div>
+     		    
+			
+          <!-- footer section-->
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><span><img src="images/n2logo.png" alt="logo"/></span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="contact.html">Contact</a>
+				</p>
+                
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+			
+					<p><i class="fas fa-map-marker-alt" ></i>Kigali, Rwanda</p>
+				</div>
+
+				<div>
+		
+					<p><i class="fas fa-phone"></i>+2507856523</p>
+				</div>
+
+				<div>
+			
+					<p><i class="fas fa-envelope-square"></i><a href="mailto:propertyprolite@mart.com">propertyprolite@mart.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
+
+				</p>
+                
+               <hr>
+				<p class="footer-company-name">Property-Pro Lite &copy; 2019 Developed by Pacifique Irabishohoje</p>
+
+			</div>
+
+		</footer>
 </body>
 </html>
+
